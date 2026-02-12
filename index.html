@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HMDM ITS — Kabinet ESKALASI ASA 2025</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="LOGO HMDM.png" class="logo">
+        <div>
+          <h1>HMDM ITS <span>2025</span></h1>
+          <p>Kabinet ESKALASI ASA</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#people">The People</a>
+      </nav>
+    </div>
+  </header>
+
+   <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Himpunan Mahasiswa</h2>
+        <h2>Departemen Teknik Mesin Industri</h2>
+        <p>Institut Teknologi Sepuluh Nopember</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+   <section id="about" class="about-section"></section>
+  <div class="about-box">
+  <div class="about-bubble" id="aboutToggle">
+    Apa itu HMDM ITS?
+  </div>
+
+  <div class="about-content" id="aboutContent">
+  <p class="about-text">
+    HMDM ITS adalah organisasi mahasiswa yang menaungi aspirasi,
+    kegiatan akademik dan non-akademik mahasiswa Teknik Mesin Industri.
+    Kabinet ESKALASI ASA berfokus pada pengembangan SDM, kreativitas,
+    dan pengabdian masyarakat.
+  </p>
+
+  <p class="about-text-title">VISI HMDM ITS</p>
+  <p class="about-text">
+    Menjadi himpunan yang responsif, profesional, dan inovatif.
+  </p>
+
+  <section id="mission" class="mission-section">
+    <h2>MISI HMDM ITS</h2>
+    <ol>
+      <li>Meningkatkan kualitas SDM berkelanjutan</li>
+      <li>Mendorong karya dan inovasi nyata</li>
+      <li>Sinergi pengabdian kepada masyarakat</li>
+    </ol>
+  </section>
+</div>
+
+
+
+<script>
+function toggleDetail(id){
+
+  const selectedBox = document.getElementById(id);
+  const allBoxes = document.querySelectorAll(".detail-box");
+
+  allBoxes.forEach(box => {
+    if(box !== selectedBox){
+      box.style.display = "none";
+    }
+  });
+
+  if(selectedBox.style.display === "block"){
+    selectedBox.style.display = "none";
+  } else {
+    selectedBox.style.display = "block";
+  }
+}
+</script>
+ 
+
+
+  <!-- THE PEOPLE (UPDATED) -->
+  <section id="people" class="section">
+  <h2 class="center-title">The People Behind HMDM ITS</h2>
+
+  <div class="people-grid">
+    <div class="people-item" onclick="openDivision('BPH')">BPH</div>
+    <div class="people-item" onclick="openDivision('BENGKEL')">BSO BENGKEL</div>
+    <div class="people-item" onclick="openDivision('KWU')">BSO KWU</div>
+    <div class="people-item" onclick="openDivision('DAGRI')">DAGRI</div>
+    <div class="people-item" onclick="openDivision('PSDM')">PSDM</div>
+    <div class="people-item" onclick="openDivision('PROFKIL')">PROFKIL</div>
+    <div class="people-item" onclick="openDivision('MINBA')">MINBA</div>
+    <div class="people-item" onclick="openDivision('MEDKRAF')">MEDKRAF</div>
+    <div class="people-item" onclick="openDivision('SOSMA')">SOSMA</div>
+    <div class="people-item" onclick="openDivision('SOSMAS')">SOSMAS</div>
+    <div class="people-item" onclick="openDivision('HUBLU')">HUBLU</div>
+  </div>
+</section>
+
+
+<!-- MODAL -->
+<div id="peopleModal" class="people-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3 id="modalTitle"></h3>
+
+    <div class="modal-slider">
+      <button class="slider-btn prev">&#10094;</button>
+      <div class="slider-track" id="modalSliderTrack"></div>
+      <button class="slider-btn next">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
+
+   <!-- AUTO SLIDER -->
+<div class="people-slider">
+  <img id="sliderImage" src="BPH.jpg" alt="HMDM ITS">
+</div>
+
+<!-- MODAL -->
+<div class="image-modal" id="imageModal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="modalCaption"></div>
+</div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="Eskalasi Asa HF.png" alt="Eskalasi Asa" class="footer-photo">
+      <div>
+        <footer class="footer-landscape">
+  <div class="footer-overlay">
+    <div class="footer-content">
+        <h4>HMDM ITS</h4>
+        <p>Himpunan Mahasiswa Departemen Teknik Mesin Industri</p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@hmdm_its?_r=1&_t=ZS-91BKPxtgngH_" target="_blank" title="TikTok">
+            <img src="tiktok.png" alt="TikTok">
+          </a>
+          <a href="https://www.instagram.com/hmdm_its?igsh=MWY0cWt4OHpoZnh3YQ==" target="_blank" title="Instagram">
+            <img src="instagram.png" alt="Instagram">
+          </a>
+          <a href="https://youtube.com/@hmdmits5920?si=1NZVC7K02m9NMARr" target="_blank" title="YouTube">
+            <img src="youtube.png" alt="YouTube">
+          </a>
+          <a href="https://www.linkedin.com/company/hmdm-its/" target="_blank" title="LinkedIn">
+            <img src="Linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+        <small>© HMDM ITS 2025 | Kabinet ESKALASI ASA</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
